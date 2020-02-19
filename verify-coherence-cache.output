@@ -1,0 +1,52 @@
+2020-02-19 11:16:46.175/0.400 Oracle Coherence 3.7.1.0 <Info> (thread=main, member=n/a): Loaded operational configuration from "jar:file:/C:/Users/538040/.m2/repository/com/oracle/coherence/coherence/3.7.1/coherence-3.7.1.jar!/tangosol-coherence.xml"
+2020-02-19 11:16:46.215/0.440 Oracle Coherence 3.7.1.0 <Info> (thread=main, member=n/a): Loaded operational overrides from "jar:file:/C:/Users/538040/.m2/repository/com/oracle/coherence/coherence/3.7.1/coherence-3.7.1.jar!/tangosol-coherence-override-dev.xml"
+2020-02-19 11:16:46.217/0.442 Oracle Coherence 3.7.1.0 <Info> (thread=main, member=n/a): Loaded operational overrides from "file:/C:/dev/other/coherence-cache/src/main/resources/tangosol-coherence-override.xml"
+2020-02-19 11:16:46.220/0.445 Oracle Coherence 3.7.1.0 <D5> (thread=main, member=n/a): Optional configuration override "/custom-mbeans.xml" is not specified
+
+Oracle Coherence Version 3.7.1.0 Build 27797
+ Grid Edition: Development mode
+Copyright (c) 2000, 2011, Oracle and/or its affiliates. All rights reserved.
+
+2020-02-19 11:16:47.799/2.023 Oracle Coherence GE 3.7.1.0 <D4> (thread=main, member=n/a): TCMP bound to /192.168.1.100:8090 using SystemSocketProvider
+2020-02-19 11:16:48.456/2.680 Oracle Coherence GE 3.7.1.0 <Info> (thread=Cluster, member=n/a): This Member(Id=3, Timestamp=2020-02-19 11:16:48.451, Address=192.168.1.100:8090, MachineId=20093, Location=site:,machine:LTIN122615,process:9264, Role=CoherenceConsole, Edition=Grid Edition, Mode=Development, CpuCount=8, SocketCount=8) joined cluster "SMCluster" with senior Member(Id=1, Timestamp=2020-02-19 11:13:46.219, Address=192.168.1.100:8088, MachineId=20093, Location=site:,machine:LTIN122615,process:12864, Role=CoherenceServer, Edition=Grid Edition, Mode=Development, CpuCount=8, SocketCount=8)
+2020-02-19 11:16:48.664/2.888 Oracle Coherence GE 3.7.1.0 <D5> (thread=Cluster, member=n/a): Member 1 joined Service Management with senior member 1
+2020-02-19 11:16:48.664/2.888 Oracle Coherence GE 3.7.1.0 <D5> (thread=Cluster, member=n/a): Member 1 joined Service DistributedCache with senior member 1
+2020-02-19 11:16:48.666/2.890 Oracle Coherence GE 3.7.1.0 <Info> (thread=main, member=n/a): Started cluster Name=SMCluster
+
+Group{Address=224.3.6.0, Port=3032, TTL=0}
+
+MasterMemberSet(
+  ThisMember=Member(Id=3, Timestamp=2020-02-19 11:16:48.451, Address=192.168.1.100:8090, MachineId=20093, Location=site:,machine:LTIN122615,process:9264, Role=CoherenceConsole)
+  OldestMember=Member(Id=1, Timestamp=2020-02-19 11:13:46.219, Address=192.168.1.100:8088, MachineId=20093, Location=site:,machine:LTIN122615,process:12864, Role=CoherenceServer)
+  ActualMemberSet=MemberSet(Size=2
+    Member(Id=1, Timestamp=2020-02-19 11:13:46.219, Address=192.168.1.100:8088, MachineId=20093, Location=site:,machine:LTIN122615,process:12864, Role=CoherenceServer)
+    Member(Id=3, Timestamp=2020-02-19 11:16:48.451, Address=192.168.1.100:8090, MachineId=20093, Location=site:,machine:LTIN122615,process:9264, Role=CoherenceConsole)
+    )
+  MemberId|ServiceVersion|ServiceJoined|MemberState
+    1|3.7.1|2020-02-19 11:13:46.219|JOINED,
+    3|3.7.1|2020-02-19 11:16:48.658|JOINED
+  RecycleMillis=1200000
+  RecycleSet=MemberSet(Size=0
+    )
+  )
+
+TcpRing{Connections=[1]}
+IpMonitor{AddressListSize=0}
+
+2020-02-19 11:16:48.709/2.933 Oracle Coherence GE 3.7.1.0 <D5> (thread=Invocation:Management, member=3): Service Management joined the cluster with senior service member 1
+
+Map (hello-example): cache hello-example
+<distributed-scheme>
+  <scheme-name>distributed</scheme-name>
+  <service-name>DistributedCache</service-name>
+  <backing-map-scheme>
+    <local-scheme/>
+  </backing-map-scheme>
+  <autostart>true</autostart>
+</distributed-scheme>
+
+Map (hello-example): list
+k1 = Hello World!
+k2 = Hello India!
+
+Map (hello-example):

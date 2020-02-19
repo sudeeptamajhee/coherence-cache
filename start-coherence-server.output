@@ -1,0 +1,44 @@
+
+2020-02-19 11:02:30.572/0.444 Oracle Coherence 3.7.1.0 <Info> (thread=main, member=n/a): Loaded operational configuration from "jar:file:/C:/Users/538040/.m2/repository/com/oracle/coherence/coherence/3.7.1/coherence-3.7.1.jar!/tangosol-coherence.xml"
+2020-02-19 11:02:30.623/0.496 Oracle Coherence 3.7.1.0 <Info> (thread=main, member=n/a): Loaded operational overrides from "jar:file:/C:/Users/538040/.m2/repository/com/oracle/coherence/coherence/3.7.1/coherence-3.7.1.jar!/tangosol-coherence-override-dev.xml"
+2020-02-19 11:02:30.626/0.500 Oracle Coherence 3.7.1.0 <Info> (thread=main, member=n/a): Loaded operational overrides from "file:/C:/dev/other/coherence-cache/src/main/resources/tangosol-coherence-override.xml"
+2020-02-19 11:02:30.631/0.504 Oracle Coherence 3.7.1.0 <D5> (thread=main, member=n/a): Optional configuration override "/custom-mbeans.xml" is not specified
+
+Oracle Coherence Version 3.7.1.0 Build 27797
+ Grid Edition: Development mode
+Copyright (c) 2000, 2011, Oracle and/or its affiliates. All rights reserved.
+
+2020-02-19 11:02:30.846/0.718 Oracle Coherence GE 3.7.1.0 <Info> (thread=main, member=n/a): Loaded cache configuration from "file:/C:/dev/other/coherence-cache/src/main/resources/my-coherence-cache-config.xml"
+2020-02-19 11:02:32.819/2.692 Oracle Coherence GE 3.7.1.0 <D4> (thread=main, member=n/a): TCMP bound to /192.168.1.100:8088 using SystemSocketProvider
+2020-02-19 11:02:36.530/6.403 Oracle Coherence GE 3.7.1.0 <Info> (thread=Cluster, member=n/a): Created a new cluster "SMCluster" with Member(Id=1, Timestamp=2020-02-19 11:02:33.203, Address=192.168.1.100:8088, MachineId=20093, Location=site:,machine:LTIN122615,process:4824, Role=CoherenceServer, Edition=Grid Edition, Mode=Development, CpuCount=8, SocketCount=8) UID=0xC0A80164000001705BEEFA334E7D1F98
+2020-02-19 11:02:36.539/6.412 Oracle Coherence GE 3.7.1.0 <Info> (thread=main, member=n/a): Started cluster Name=SMCluster
+
+Group{Address=224.3.6.0, Port=3032, TTL=0}
+
+MasterMemberSet(
+  ThisMember=Member(Id=1, Timestamp=2020-02-19 11:02:33.203, Address=192.168.1.100:8088, MachineId=20093, Location=site:,machine:LTIN122615,process:4824, Role=CoherenceServer)
+  OldestMember=Member(Id=1, Timestamp=2020-02-19 11:02:33.203, Address=192.168.1.100:8088, MachineId=20093, Location=site:,machine:LTIN122615,process:4824, Role=CoherenceServer)
+  ActualMemberSet=MemberSet(Size=1
+    Member(Id=1, Timestamp=2020-02-19 11:02:33.203, Address=192.168.1.100:8088, MachineId=20093, Location=site:,machine:LTIN122615,process:4824, Role=CoherenceServer)
+    )
+  MemberId|ServiceVersion|ServiceJoined|MemberState
+    1|3.7.1|2020-02-19 11:02:36.53|JOINED
+  RecycleMillis=1200000
+  RecycleSet=MemberSet(Size=0
+    )
+  )
+
+TcpRing{Connections=[]}
+IpMonitor{AddressListSize=0}
+
+2020-02-19 11:02:36.620/6.493 Oracle Coherence GE 3.7.1.0 <D5> (thread=Invocation:Management, member=1): Service Management joined the cluster with senior service member 1
+2020-02-19 11:02:36.914/6.787 Oracle Coherence GE 3.7.1.0 <D5> (thread=DistributedCache, member=1): Service DistributedCache joined the cluster with senior service member 1
+2020-02-19 11:02:36.942/6.814 Oracle Coherence GE 3.7.1.0 <Info> (thread=main, member=1):
+Services
+  (
+  ClusterService{Name=Cluster, State=(SERVICE_STARTED, STATE_JOINED), Id=0, Version=3.7.1, OldestMemberId=1}
+  InvocationService{Name=Management, State=(SERVICE_STARTED), Id=1, Version=3.1, OldestMemberId=1}
+  PartitionedCache{Name=DistributedCache, State=(SERVICE_STARTED), LocalStorage=enabled, PartitionCount=257, BackupCount=1, AssignedPartitions=257, BackupPartitions=0}
+  )
+
+Started DefaultCacheServer...
